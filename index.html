@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="progekt_css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+
+    <title>Heroes-and-dragon</title>
+</head>
+<body>
+    <h1 id = "text" class="unifrakturmaguntia-regular">You need to choose your desired character</h1>
+    <div id="content" >
+        <div class="character-container">
+            <img id="character" src="geroj-blue.png" width="500px" height="auto" alt="Персонаж">
+            <button id = "1" class="button3" onclick="changeBackground('geroj-blue.png')">Blue</button>
+        </div>
+    
+        <div class="character-container">
+            <img id="character2" src="geroj-red.png" width="500px" height="auto" alt="Персонаж2">
+            <button id = "2" class="button4" onclick="changeBackground('geroj-red.png')">Red</button>
+        </div>
+    
+
+        <div class="character-container">
+            <img id="character3" src="geroj-fiolet.png" width="500px" height="auto" alt="Персонаж3">
+            <button id = "3" class="button5" onclick="changeBackground('geroj-fiolet.png')">Purple</button>
+        </div>
+    </div>
+
+
+    <h1 id = "text_fon2" class="unifrakturmaguntia-regular">Choose a dragon for further actions</h1>
+    <div id="content2">
+        <button id="4" class="button6">Dragon-red</button>
+        <button id="5" class="button7">Dragon-blue</button>
+    </div>
+
+
+    <div id="content3" class ="content33">
+        <button id="6" class="button8">Змія</button>
+        <button id="7" class="button9" >Вуж</button>
+        <button id="8" class="button10">Привид</button>
+        <button id="9" class="button11">Черепаха</button>
+    </div>
+
+    <div id="content4" class ="content44">
+        <button id="20" class="button20">Іноді</button>
+        <button id="21" class="button21" >Ні, не можуть</button>
+        <button id="22" class="button22">Можуть кригою</button>
+        <button id="23" class="button23">Так, звісно</button>
+    </div>
+    
+    <h1 id = "text_fon3" class="unifrakturmaguntia-regular">"Congratulations! You have completed all the questions — the heroes thank you for such a wonderful adventure!"</h1>
+    <div id="content5" class ="content55">
+        <button id="30" class="button30">Людей</button>
+        <button id="31" class="button31">Інших драконів</button>
+        <button id="32" class="button32">Золото</button>
+        <button id="33" class="button33">Мишей</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src ="progekt_js.js"></script>
+</body>
+</html>
