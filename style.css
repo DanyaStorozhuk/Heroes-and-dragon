@@ -1,0 +1,996 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* змінює напрямок розташування елементів на вертикальний */
+    justify-content: center; /* вирівнює по вертикалі */
+    align-items: center; /* вирівнює по горизонталі */
+    min-height: 100vh; /* Робимо висоту рівною висоті екрану */
+    width: 100vw; /* Забезпечуємо повну ширину */
+    text-align: center; 
+    background-image: url('fon-zamok-1.jpg'); /* путь к изображению */
+    background-size: cover; /* Масштабування на весь екран */
+    background-position: center; /* Центрування */
+    background-repeat: no-repeat; /* Запобігання повторенню */
+    height: 100vh;
+}
+
+div {
+    display: inline-block;
+}
+
+h1 {
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid black; /* Імітація курсора */
+    animation: typing 20s steps(30, end), blink 0.5s step-end infinite alternate;
+    max-width: 100%;
+    font-family: 'Lombardic', serif;
+}
+
+
+@keyframes typing {
+    from {
+        width: 0ch;
+        border: none;
+    }
+    to {
+        width: 100%;
+        border: none;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: rgb(0, 0, 0);
+    }
+    to {
+        border-color:rgb(0, 0, 0);
+    }
+}
+    
+
+img { 
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button3 {
+    margin: 12px;
+    height: 60px;
+    width: 195px;
+    border-radius: 20px;
+    background: rgb(8, 8, 175);
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px -5px 15px rgb(4, 30, 198), 5px 5px 15px, rgb(2, 0, 105), inset 5px 5px 10px rgb(4, 30, 198),
+      inset -5px -5px 10px rgb(2, 0, 105),;
+    font-family: "Damion", cursive;
+    cursor: pointer;
+    border: none;
+    font-size: 22px;
+    color: rgb(161, 161, 161);
+    transition: 500ms;
+}
+  
+.button3:hover {
+    box-shadow: -5px -5px 15px rgb(4, 30, 198), 5px 5px 15px rgb(2, 0, 105), inset 5px 5px 10px rgb(2, 0, 105),
+    inset -5px -5px 10px rgb(4, 30, 198);
+    color: #d6d6d6;
+    transition: 500ms;
+  }
+
+.button3:active {
+    background-color: rgb(4, 30, 198);
+    box-shadow: 0 5px rgb(255, 255, 255);
+    transform: translateY(4px);
+}
+
+
+.button4 {
+    margin: 12px;
+    height: 60px;
+    width: 195px;
+    border-radius: 20px;
+    background: rgb(145, 0, 0);
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px -5px 15px rgb(181, 3, 3), 5px 5px 15px, rgb(109, 0, 0), inset 5px 5px 10px rgb(181, 3, 3),
+      inset -5px -5px 10px rgb(109, 0, 0),;
+    font-family: "Damion", cursive;
+    cursor: pointer;
+    border: none;
+    font-size: 22px;
+    color: rgb(161, 161, 161);
+    transition: 500ms;
+}
+  
+.button4:hover {
+    box-shadow: -5px -5px 15px rgb(181, 3, 3), 5px 5px 15px rgb(109, 0, 0), inset 5px 5px 10px rgb(109, 0, 0),
+    inset -5px -5px 10px rgb(181, 3, 3);
+    color: #d6d6d6;
+    transition: 500ms;
+  }
+
+.button4:active {
+    background-color: rgb(181, 3, 3);
+    box-shadow: 0 5px rgb(255, 255, 255);
+    transform: translateY(4px);
+}
+
+.button5 {
+    margin: 12px;
+    height: 60px;
+    width: 195px;
+    border-radius: 20px;
+    background: rgb(89, 0, 80);
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px -5px 15px rgb(139, 0, 134), 5px 5px 15px, rgb(71, 1, 66), inset 5px 5px 10px rgb(139, 0, 134),
+      inset -5px -5px 10px rgb(71, 1, 66),;
+    font-family: "Damion", cursive;
+    cursor: pointer;
+    border: none;
+    font-size: 22px;
+    color: rgb(161, 161, 161);
+    transition: 500ms;
+}
+  
+.button5:hover {
+    box-shadow: -5px -5px 15px rgb(139, 0, 134), 5px 5px 15px rgb(71, 1, 66), inset 5px 5px 10px rgb(71, 1, 66),
+    inset -5px -5px 10px rgb(139, 0, 134);
+    color: #d6d6d6;
+    transition: 500ms;
+  }
+
+.button5:active {
+    background-color: rgb(139, 0, 134);
+    box-shadow: 0 5px rgb(255, 255, 255);
+    transform: translateY(4px);
+}
+
+.button6 {
+    margin: 12px;
+    height: 80px;
+    width: 250px;
+    border-radius: 20px;
+    background: rgb(145, 0, 0);
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px -5px 15px rgb(181, 3, 3), 5px 5px 15px, rgb(109, 0, 0), inset 5px 5px 10px rgb(181, 3, 3),
+      inset -5px -5px 10px rgb(109, 0, 0),;
+    font-family: "Damion", cursive;
+    cursor: pointer;
+    border: none;
+    font-size: 22px;
+    color: rgb(161, 161, 161);
+    transition: 500ms;
+}
+  
+.button6:hover {
+    box-shadow: -5px -5px 15px rgb(181, 3, 3), 5px 5px 15px rgb(109, 0, 0), inset 5px 5px 10px rgb(109, 0, 0),
+    inset -5px -5px 10px rgb(181, 3, 3);
+    color: #d6d6d6;
+    transition: 500ms;
+  }
+
+.button6:active {
+    background-color: rgb(181, 3, 3);
+    box-shadow: 0 5px rgb(255, 255, 255);
+    transform: translateY(4px);
+}
+.button7 {
+    margin: 12px;
+    height: 80px;
+    width: 250px;
+    border-radius: 20px;
+    background: rgb(8, 8, 175);
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px -5px 15px rgb(4, 30, 198), 5px 5px 15px, rgb(2, 0, 105), inset 5px 5px 10px rgb(4, 30, 198),
+      inset -5px -5px 10px rgb(2, 0, 105),;
+    font-family: "Damion", cursive;
+    cursor: pointer;
+    border: none;
+    font-size: 22px;
+    color: rgb(161, 161, 161);
+    transition: 500ms;
+}
+  
+.button7:hover {
+    box-shadow: -5px -5px 15px rgb(4, 30, 198), 5px 5px 15px rgb(2, 0, 105), inset 5px 5px 10px rgb(2, 0, 105),
+    inset -5px -5px 10px rgb(4, 30, 198);
+    color: #d6d6d6;
+    transition: 500ms;
+  }
+
+.button7:active {
+    background-color: rgb(4, 30, 198);
+    box-shadow: 0 5px rgb(255, 255, 255);
+    transform: translateY(4px);
+}
+
+
+.character {
+    width: 400px;
+    height: auto;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.character:hover {
+    transform: rotateY(180deg);
+}
+
+.container-buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 150px;
+  }
+
+
+
+.centered-container {
+    display: flex;
+    flex-direction: row; /* Горизонтальне розташування */
+    justify-content: center; /* Центрує по горизонталі */
+    gap: 20px; /* Відстань між картинками */
+
+}
+
+.all-characters {
+    display: flex; /* Робимо всі персонажі горизонтальними */
+    justify-content: center; /* Центруємо їх */
+    gap: 40px; /* Відстань між персонажами */
+}
+
+.character-container {
+    display: flex;
+    flex-direction: column; /* Кожен персонаж з кнопкою вертикально */
+    align-items: center; /* Центруємо в середині */
+    gap: 10px;
+    justify-content: center; 
+}
+
+
+.image {
+    position: absolute;
+    left: 500px; /* Початкове положення - за межами екрану */
+    opacity: 0;
+    transition: left 2s ease-in-out, opacity 2s ease-in-out;
+  }
+  
+
+.show-blue {
+    top: 180px;
+    left: 100px;
+    opacity: 1;
+}
+
+.show-red {
+    top: 250px;
+    right: 100px;
+    opacity: 1;
+}
+
+.show-hero {
+    position: absolute;
+    bottom: 10%;
+    opacity: 1;
+}
+
+
+#content {
+    display: flex;
+    flex-direction: row; /* Всі елементи йдуть горизонтально */
+    justify-content: center; /* Центруємо їх */
+    align-items: center;
+    gap: 20px; /* Відстань між персонажами */
+}
+
+/* Синій дракон */
+.dragon-blue {
+    left: 1300px; /* Коригуй позицію */
+    top: 80px;
+    z-index: 1;
+    position: absolute;
+}
+
+/* Червоний дракон */
+.dragon-red {
+    left: -10px; /* Переміщуємо ліворуч */
+    top: 80px;
+    z-index: 2;
+    position: absolute;
+}
+
+.hero {
+    position: fixed;
+    bottom: -100px; /* Початкове положення поза екраном */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: bottom 1.5s ease-out, opacity 1.5s;
+    width: 300px;
+}
+
+.show {
+    opacity: 1;
+}
+
+.unifrakturmaguntia-regular {
+    font-family: "UnifrakturMaguntia", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+#content2 {
+    display: none; /* сховано спочатку */
+    flex-direction: row;
+    align-items: center;
+    gap: 1200px;
+    margin-top: 150px;
+}
+
+
+.unifrakturmaguntia-regular2 {
+    visibility: hidden; /* приховує, але зберігає простір */
+    font-family: "UnifrakturMaguntia", cursive;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.image.hero {
+    position: absolute;
+    bottom: 200px; /* Початково поза екраном */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    z-index: 10;
+
+    justify-content: center;
+    width: 500px;
+    height: auto;
+}
+
+.image.hero.show-hero {
+    bottom: 50px; /* Куди має піднятись */
+    opacity: 1;
+}
+
+#text_fon2 {
+    display: none; /* Спочатку прихований */
+}
+
+#text_fon3 {
+    display: none; /* Спочатку прихований */
+    color: #d6d6d6;
+}
+
+
+#content3 {
+    display: none; /* сховано спочатку */
+    flex-direction: row;
+    align-items: center;
+    gap: 1200px;
+    margin-top: 250px;
+}
+
+.chosen-dragon {
+    position: absolute;
+    bottom: 200px; /* Початково поза екраном */
+    left: 80%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    z-index: 10;
+
+    justify-content: center;
+    width: 700px;
+    height: auto;
+}
+
+.show-dragon {
+    opacity: 1; /* З'являється плавно */
+}
+
+
+.button8 {
+    margin: 12px;
+    height: 150px;
+    width: 360px;
+    border-radius: 20px;
+    background: #333;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444,
+      inset -5px -5px 10px #222;
+    font-family: "Damion", cursive;
+    cursor: pointer;
+    border: none;
+    font-size: 32px;
+    color: rgb(161, 161, 161);
+    transition: 500ms;
+}
+  
+.button8:hover {
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222,
+    inset -5px -5px 10px #444;
+    color: #d6d6d6;
+    transition: 500ms;
+  }
+
+.button8:active {
+    background-color: #444;
+    box-shadow: 0 5px rgb(255, 255, 255);
+    transform: translateY(4px);
+}
+
+.button9 {
+    margin: 12px;
+    height: 150px;
+    width: 360px;
+    border-radius: 20px;
+    background: #333;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444,
+      inset -5px -5px 10px #222;
+    font-family: "Damion", cursive;
+    cursor: pointer;
+    border: none;
+    font-size: 32px;
+    color: rgb(161, 161, 161);
+    transition: 500ms;
+}
+  
+.button9:hover {
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222,
+    inset -5px -5px 10px #444;
+    color: #d6d6d6;
+    transition: 500ms;
+  }
+
+.button9:active {
+    background-color: #444;
+    box-shadow: 0 5px rgb(255, 255, 255);
+    transform: translateY(4px);
+}
+
+.button10 {
+    margin: 12px;
+    height: 150px;
+    width: 360px;
+    border-radius: 20px;
+    background: #333;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444,
+      inset -5px -5px 10px #222;
+    font-family: "Damion", cursive;
+    cursor: pointer;
+    border: none;
+    font-size: 32px;
+    color: rgb(161, 161, 161);
+    transition: 500ms;
+}
+  
+.button10:hover {
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222,
+    inset -5px -5px 10px #444;
+    color: #d6d6d6;
+    transition: 500ms;
+  }
+
+.button10:active {
+    background-color: #444;
+    box-shadow: 0 5px rgb(255, 255, 255);
+    transform: translateY(4px);
+}
+
+.button11 {
+    margin: 12px;
+    height: 150px;
+    width: 360px;
+    border-radius: 20px;
+    background: #333;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444,
+      inset -5px -5px 10px #222;
+    font-family: "Damion", cursive;
+    cursor: pointer;
+    border: none;
+    font-size: 32px;
+    color: rgb(161, 161, 161);
+    transition: 500ms;
+}
+  
+.button11:hover {
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222,
+    inset -5px -5px 10px #444;
+    color: #d6d6d6;
+    transition: 500ms;
+}
+
+.button11:active {
+    background-color: #444;
+    box-shadow: 0 5px rgb(255, 255, 255);
+    transform: translateY(4px);
+}
+
+/* ховаємо спочатку */
+#content3 {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: -40px;
+    margin-left: -1200px;
+  }
+  
+  /* клас для показу */
+#content3.show {
+    display: flex;
+  }
+
+.chosen-chmarunka {
+    position: absolute;
+    top: 16.7vh;
+    left: 59.9vw;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    z-index: 10;
+
+    justify-content: center;
+    width: 300px;
+    height: auto;
+}
+.show-cloud {
+    opacity: 1;
+}
+
+
+#nextQuestion {
+    position: fixed;
+    top: 50%; /* Замість "center" — правильний синтаксис */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Центрування по X і Y */
+    
+    margin: 12px;
+    height: 50px;
+    width: 160px;
+    border-radius: 20px;
+    background: rgb(191, 2, 166);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px -5px 15px rgb(240, 0, 253), 
+                5px 5px 15px rgb(163, 0, 155), 
+                inset 5px 5px 10px rgb(240, 0, 253),
+                inset -5px -5px 10px rgb(163, 0, 155);
+    font-family: "Damion", cursive;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    color: rgb(161, 161, 161);
+    transition: all 0.3s ease;
+}
+
+#nextQuestion:hover {
+    box-shadow: -5px -5px 15px rgb(240, 0, 253), 
+                5px 5px 15px rgb(163, 0, 155), 
+                inset 5px 5px 10px rgb(163, 0, 155),
+                inset -5px -5px 10px rgb(240, 0, 253);
+    color: #d6d6d6;
+    background-color: rgb(191, 2, 166); /* Не залишай initial, щоб не зникало */
+}
+
+#nextQuestion:active {
+    background-color: rgb(240, 0, 253);
+    box-shadow: 0 5px rgb(255, 255, 255);
+    transform: translate(-50%, calc(-50% + 4px)); /* Залишаємо центрування + натискання вниз */
+}
+
+
+
+
+
+
+#nextQuestion2 {
+    position: fixed;
+    top: 50%; /* Замість "center" — правильний синтаксис */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Центрування по X і Y */
+    
+    margin: 12px;
+    height: 50px;
+    width: 160px;
+    border-radius: 20px;
+    background: rgb(191, 2, 166);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px -5px 15px rgb(240, 0, 253), 
+                5px 5px 15px rgb(163, 0, 155), 
+                inset 5px 5px 10px rgb(240, 0, 253),
+                inset -5px -5px 10px rgb(163, 0, 155);
+    font-family: "Damion", cursive;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    color: rgb(161, 161, 161);
+    transition: all 0.3s ease;
+}
+
+#nextQuestion2:hover {
+    box-shadow: -5px -5px 15px rgb(240, 0, 253), 
+                5px 5px 15px rgb(163, 0, 155), 
+                inset 5px 5px 10px rgb(163, 0, 155),
+                inset -5px -5px 10px rgb(240, 0, 253);
+    color: #d6d6d6;
+    background-color: rgb(191, 2, 166); /* Не залишай initial, щоб не зникало */
+}
+
+#nextQuestion2:active {
+    background-color: rgb(240, 0, 253);
+    box-shadow: 0 5px rgb(255, 255, 255);
+    transform: translate(-50%, calc(-50% + 4px)); /* Залишаємо центрування + натискання вниз */
+}
+
+
+#nextQuestion3 {
+    position: fixed;
+    top: 50%; /* Замість "center" — правильний синтаксис */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Центрування по X і Y */
+    
+    margin: 12px;
+    height: 50px;
+    width: 160px;
+    border-radius: 20px;
+    background: rgb(191, 2, 166);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px -5px 15px rgb(240, 0, 253), 
+                5px 5px 15px rgb(163, 0, 155), 
+                inset 5px 5px 10px rgb(240, 0, 253),
+                inset -5px -5px 10px rgb(163, 0, 155);
+    font-family: "Damion", cursive;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    color: rgb(161, 161, 161);
+    transition: all 0.3s ease;
+}
+
+#nextQuestion3:hover {
+    box-shadow: -5px -5px 15px rgb(240, 0, 253), 
+                5px 5px 15px rgb(163, 0, 155), 
+                inset 5px 5px 10px rgb(163, 0, 155),
+                inset -5px -5px 10px rgb(240, 0, 253);
+    color: #d6d6d6;
+    background-color: rgb(191, 2, 166); /* Не залишай initial, щоб не зникало */
+}
+
+#nextQuestion3:active {
+    background-color: rgb(240, 0, 253);
+    box-shadow: 0 5px rgb(255, 255, 255);
+    transform: translate(-50%, calc(-50% + 4px)); /* Залишаємо центрування + натискання вниз */
+}
+
+#content4 {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: -40px;
+    margin-left: -1200px;
+  }
+  
+  /* клас для показу */
+#content4.show {
+    display: flex;
+}
+#content5 {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+    margin-left: -1200px;
+  }
+  
+  /* клас для показу */
+#content5.show {
+    display: flex;
+  }
+
+
+.button20 {
+    margin: 12px;
+    height: 150px;
+    width: 360px;
+    border-radius: 20px;
+    background: #333;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444,
+      inset -5px -5px 10px #222;
+    font-family: "Damion", cursive;
+    cursor: pointer;
+    border: none;
+    font-size: 32px;
+    color: rgb(161, 161, 161);
+    transition: 500ms;
+}
+  
+.button20:hover {
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222,
+    inset -5px -5px 10px #444;
+    color: #d6d6d6;
+    transition: 500ms;
+}
+
+.button20:active {
+    background-color: #444;
+    box-shadow: 0 5px rgb(255, 255, 255);
+    transform: translateY(4px);
+}
+
+.button21 {
+    margin: 12px;
+    height: 150px;
+    width: 360px;
+    border-radius: 20px;
+    background: #333;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444,
+      inset -5px -5px 10px #222;
+    font-family: "Damion", cursive;
+    cursor: pointer;
+    border: none;
+    font-size: 32px;
+    color: rgb(161, 161, 161);
+    transition: 500ms;
+}
+  
+.button21:hover {
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222,
+    inset -5px -5px 10px #444;
+    color: #d6d6d6;
+    transition: 500ms;
+}
+
+.button21:active {
+    background-color: #444;
+    box-shadow: 0 5px rgb(255, 255, 255);
+    transform: translateY(4px);
+}
+
+.button22 {
+    margin: 12px;
+    height: 150px;
+    width: 360px;
+    border-radius: 20px;
+    background: #333;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444,
+      inset -5px -5px 10px #222;
+    font-family: "Damion", cursive;
+    cursor: pointer;
+    border: none;
+    font-size: 32px;
+    color: rgb(161, 161, 161);
+    transition: 500ms;
+}
+  
+.button22:hover {
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222,
+    inset -5px -5px 10px #444;
+    color: #d6d6d6;
+    transition: 500ms;
+}
+
+.button22:active {
+    background-color: #444;
+    box-shadow: 0 5px rgb(255, 255, 255);
+    transform: translateY(4px);
+}
+
+.button23 {
+    margin: 12px;
+    height: 150px;
+    width: 360px;
+    border-radius: 20px;
+    background: #333;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444,
+      inset -5px -5px 10px #222;
+    font-family: "Damion", cursive;
+    cursor: pointer;
+    border: none;
+    font-size: 32px;
+    color: rgb(161, 161, 161);
+    transition: 500ms;
+}
+  
+.button23:hover {
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222,
+    inset -5px -5px 10px #444;
+    color: #d6d6d6;
+    transition: 500ms;
+}
+
+.button23:active {
+    background-color: #444;
+    box-shadow: 0 5px rgb(255, 255, 255);
+    transform: translateY(4px);
+}
+
+.unifrakturmaguntia-regular {
+    font-family: "UnifrakturMaguntia", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.chosen-dragon {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    /* інші стилі */
+}
+
+.chosen-dragon.show-dragon {
+    opacity: 1;
+}
+
+#content5 {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+    margin-left: -1200px;
+  }
+  
+  /* клас для показу */
+#content5.show {
+    display: flex;
+  }
+
+.button30 {
+    margin: 12px;
+    height: 150px;
+    width: 360px;
+    border-radius: 20px;
+    background: #333;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444,
+      inset -5px -5px 10px #222;
+    font-family: "Damion", cursive;
+    cursor: pointer;
+    border: none;
+    font-size: 32px;
+    color: rgb(161, 161, 161);
+    transition: 500ms;
+}
+  
+.button30:hover {
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222,
+    inset -5px -5px 10px #444;
+    color: #d6d6d6;
+    transition: 500ms;
+}
+
+.button30:active {
+    background-color: #444;
+    box-shadow: 0 5px rgb(255, 255, 255);
+    transform: translateY(4px);
+}
+
+.button31 {
+    margin: 12px;
+    height: 150px;
+    width: 360px;
+    border-radius: 20px;
+    background: #333;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444,
+      inset -5px -5px 10px #222;
+    font-family: "Damion", cursive;
+    cursor: pointer;
+    border: none;
+    font-size: 32px;
+    color: rgb(161, 161, 161);
+    transition: 500ms;
+}
+  
+.button31:hover {
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222,
+    inset -5px -5px 10px #444;
+    color: #d6d6d6;
+    transition: 500ms;
+}
+
+.button31:active {
+    background-color: #444;
+    box-shadow: 0 5px rgb(255, 255, 255);
+    transform: translateY(4px);
+}
+
+.button32 {
+    margin: 12px;
+    height: 150px;
+    width: 360px;
+    border-radius: 20px;
+    background: #333;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444,
+      inset -5px -5px 10px #222;
+    font-family: "Damion", cursive;
+    cursor: pointer;
+    border: none;
+    font-size: 32px;
+    color: rgb(161, 161, 161);
+    transition: 500ms;
+}
+  
+.button32:hover {
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222,
+    inset -5px -5px 10px #444;
+    color: #d6d6d6;
+    transition: 500ms;
+}
+
+.button32:active {
+    background-color: #444;
+    box-shadow: 0 5px rgb(255, 255, 255);
+    transform: translateY(4px);
+}
+
+.button33 {
+    margin: 12px;
+    height: 150px;
+    width: 360px;
+    border-radius: 20px;
+    background: #333;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444,
+      inset -5px -5px 10px #222;
+    font-family: "Damion", cursive;
+    cursor: pointer;
+    border: none;
+    font-size: 32px;
+    color: rgb(161, 161, 161);
+    transition: 500ms;
+}
+  
+.button33:hover {
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222,
+    inset -5px -5px 10px #444;
+    color: #d6d6d6;
+    transition: 500ms;
+}
+
+.button33:active {
+    background-color: #444;
+    box-shadow: 0 5px rgb(255, 255, 255);
+    transform: translateY(4px);
+}
